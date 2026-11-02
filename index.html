@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ladlee Designer Era — Live Your Dream Outfit</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500&family=Noto+Sans+Gurmukhi:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#E9D8C0;color:#241317;font-family:Jost,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#7A1F35}
+a:hover{color:#8A6526}
+input,select,textarea,button{font-family:inherit}
+*{box-sizing:border-box}
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="position:relative;overflow-x:clip;background:#E9D8C0;min-height:100vh">
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+<pattern id="zari" width="28" height="18" patternUnits="userSpaceOnUse">
+<path d="M0 1.5 H28 M0 16.5 H28" stroke="#C9A15A" style="stroke-width:.8"></path>
+<path d="M14 4 L19 9 L14 14 L9 9 Z" fill="none" stroke="#C9A15A" style="stroke-width:.9"></path>
+<circle cx="14" cy="9" r="1.4" fill="#E2C38A"></circle>
+<circle cx="0" cy="9" r="1.1" fill="#C9A15A"></circle><circle cx="28" cy="9" r="1.1" fill="#C9A15A"></circle>
+</pattern>
+</defs>
+</svg>
+
+<header style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:rgba(30,6,14,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,161,90,.4)">
+<a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#F5EADB">
+<svg viewBox="0 0 100 80" style="width:42px;height:34px;flex:none">
+<path d="M14 64 A36 36 0 0 1 86 64" fill="none" stroke="#C9A15A" style="stroke-width:2"></path>
+<path d="M50 64 L18.6 51 M50 64 L26 40 M50 64 L37 32.6 M50 64 L50 30 M50 64 L63 32.6 M50 64 L74 40 M50 64 L81.4 51" stroke="#C9A15A" style="stroke-width:1.2"></path>
+<circle cx="18.6" cy="51" r="5" fill="#2E8A84"></circle><circle cx="26" cy="40" r="5" fill="#2E8A84"></circle><circle cx="37" cy="32.6" r="5" fill="#2E8A84"></circle><circle cx="50" cy="30" r="5" fill="#2E8A84"></circle><circle cx="63" cy="32.6" r="5" fill="#2E8A84"></circle><circle cx="74" cy="40" r="5" fill="#2E8A84"></circle><circle cx="81.4" cy="51" r="5" fill="#2E8A84"></circle>
+<ellipse cx="50" cy="62" rx="7" ry="12" fill="#E2C38A"></ellipse>
+<circle cx="50" cy="44" r="4.5" fill="#E2C38A"></circle>
+</svg>
+<span style="display:flex;flex-direction:column;line-height:1">
+<span style="font-family:Marcellus,serif;font-size:25px;letter-spacing:.1em;text-transform:uppercase">Ladlee</span>
+<span style="font-size:10.5px;letter-spacing:.36em;text-transform:uppercase;margin-top:5px;color:#E2C38A">Designer Era</span>
+</span>
+</a>
+<a href="{{ waGeneral }}" target="_blank" style="display:flex;align-items:center;gap:8px;min-height:44px;padding:0 15px;background:#C9A15A;color:#241317;border-radius:999px;text-decoration:none;font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap" style-hover="background:#E2C38A;color:#241317">
+<svg viewBox="0 0 24 24" style="width:17px;height:17px"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" style="stroke-width:1.6"></path><path d="M8.6 7.6c.3-.5 1-.6 1.3-.1l.9 1.6c.2.4 0 .8-.3 1.1l-.4.4c.6 1.3 1.6 2.3 2.9 2.9l.4-.4c.3-.3.7-.5 1.1-.3l1.6.9c.5.3.4 1-.1 1.3-.9.6-2 .8-3 .3a9 9 0 0 1-4.7-4.7c-.5-1-.3-2.1.3-3z" fill="currentColor"></path></svg>
+WhatsApp Us
+</a>
+</header>
+
+<section id="top" data-screen-label="Hero" style="position:relative;min-height:calc(100svh - 65px);display:flex;align-items:flex-end;overflow:hidden;background:#1E060E">
+<img ref="{{ heroRef }}" src="{{ heroSrc }}" alt="Hand-embroidered gold tissue suit by Ladlee Designer Era" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ heroPos }}"></img>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,6,14,.25) 0%,rgba(30,6,14,0) 25%,rgba(30,6,14,.5) 58%,rgba(30,6,14,.95) 100%)"></div>
+<div style="position:absolute;inset:12px;border:1px solid rgba(226,195,138,.5);pointer-events:none"></div>
+<div style="position:absolute;inset:17px;border:1px solid rgba(226,195,138,.22);pointer-events:none"></div>
+<div style="position:relative;width:100%;max-width:1120px;margin:0 auto;padding:0 28px 46px;color:#F5EADB">
+<sc-if value="{{ showGurmukhi }}" hint-placeholder-val="{{ true }}">
+<div style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:15px;color:#E2C38A;margin-bottom:12px">ਤੁਹਾਡੇ ਸੁਪਨਿਆਂ ਦਾ ਸੂਟ</div>
+</sc-if>
+<h1 style="margin:0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(48px,13vw,100px);line-height:1;letter-spacing:.01em;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.35)">Live Your <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.12em;color:#E2C38A">Dream</span> Outfit</h1>
+<div style="width:72px;height:1px;background:#C9A15A;margin:22px 0 18px"></div>
+<p style="margin:0 0 28px;font-size:16.5px;line-height:1.55;font-weight:400;max-width:440px;color:#F2E5D2;text-wrap:pretty">Custom bridal, wedding &amp; Punjabi suits with studio handwork — designed in Canada</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;max-width:520px">
+<a href="#enquire" style="flex:1 1 200px;display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;background:#C9A15A;color:#241317;border-radius:999px;text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase" style-hover="background:#E2C38A;color:#241317">Book a Consultation</a>
+<a href="{{ waGeneral }}" target="_blank" style="flex:1 1 200px;display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border:1px solid rgba(242,229,210,.8);background:rgba(30,6,14,.3);color:#F5EADB;border-radius:999px;text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase" style-hover="background:rgba(245,234,219,.14);color:#F5EADB">WhatsApp Shruti</a>
+</div>
+</div>
+</section>
+
+<section data-screen-label="Trust strip" style="background:#1E060E;color:#F2E5D2">
+<svg aria-hidden="true" style="display:block;width:100%;height:18px"><rect width="100%" height="18" fill="url(#zari)"></rect></svg>
+<div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(160px,45%),1fr));gap:1px;background:rgba(201,161,90,.3)">
+<div style="background:#1E060E;padding:20px 12px;text-align:center"><div style="font-family:Marcellus,serif;font-size:28px;color:#E2C38A">11.8K+</div><div style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;margin-top:6px">on Instagram</div></div>
+<div style="background:#1E060E;padding:20px 12px;text-align:center;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:20px;line-height:1.2">Custom-made, every time</div>
+<div style="background:#1E060E;padding:20px 12px;text-align:center;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:20px;line-height:1.2">Hand embroidery &amp; handwork</div>
+<div style="background:#1E060E;padding:20px 12px;text-align:center;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:20px;line-height:1.2">Ships to Canada, US &amp; UK</div>
+</div>
+</section>
+
+<section id="collections" data-screen-label="Collections" style="padding:56px 0 64px;background:radial-gradient(ellipse at 50% 0%,#1A4A45 0%,#0D2B29 55%,#0A2120 100%);color:#F2E5D2">
+<div data-reveal="1" style="max-width:1120px;margin:0 auto;padding:0 22px;text-align:center">
+<div style="width:min(48vw,210px);margin:0 auto 6px">{{ peacockA }}</div>
+<div style="font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#E2C38A">The Collections</div>
+<h2 style="margin:14px 0 12px;font-family:Marcellus,serif;font-weight:400;font-size:clamp(34px,8.5vw,58px);line-height:1.08;color:#F5EADB">Made for <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#E2C38A">every</span> function</h2>
+<p style="margin:0 auto;max-width:400px;font-size:16px;line-height:1.6;color:#DCCFB9">Tap a look you love. Send it to Shruti and she'll make it yours — your colours, your fit.</p>
+</div>
+<sc-for list="{{ groups }}" as="g" hint-placeholder-count="3">
+<div data-reveal="1" style="margin-top:44px">
+<div style="max-width:1120px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:14px">
+<h3 style="margin:0;font-family:Marcellus,serif;font-weight:400;font-size:22px;line-height:1.2;color:#F5EADB">{{ g.title }}</h3>
+<span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(201,161,90,.7),transparent)"></span>
+<span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#E2C38A;white-space:nowrap">Swipe</span>
+</div>
+<div data-swiper="1" style="position:relative;max-width:1164px;margin:0 auto"><div data-swipe="1" style="touch-action:pan-x pan-y;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:18px 22px 6px;max-width:1164px;margin:0 auto;scroll-padding:0 22px">
+<sc-for list="{{ g.items }}" as="c" hint-placeholder-count="4">
+<button onClick="{{ c.open }}" style="flex:none;width:min(64vw,250px);scroll-snap-align:start;padding:6px;border:1px solid rgba(201,161,90,.55);border-radius:170px 170px 6px 6px;background:rgba(201,161,90,.06);text-align:left;cursor:pointer;color:#F5EADB">
+<div style="position:relative;aspect-ratio:4/5.6;overflow:hidden;border-radius:164px 164px 3px 3px;background:#13403C">
+<img src="{{ c.cover }}" alt="{{ c.name }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:{{ c.pos }};transition:transform .9s ease" style-hover="transform:scale(1.05)"></img>
+<div style="position:absolute;inset:auto 0 0 0;height:46%;background:linear-gradient(180deg,transparent,rgba(10,33,32,.9))"></div>
+<div style="position:absolute;left:14px;right:14px;bottom:14px">
+<div style="font-family:Marcellus,serif;font-size:20px;line-height:1.15">{{ c.name }}</div>
+<div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#E2C38A;margin-top:6px">{{ c.count }} · View</div>
+</div>
+</div>
+</button>
+</sc-for>
+</div>
+<div style="display:flex;justify-content:center;gap:12px;margin-top:16px">
+<button type="button" data-dir="-1" onClick="{{ slide }}" aria-label="Previous" style="width:48px;height:48px;border-radius:50%;border:1px solid rgba(201,161,90,.75);background:rgba(0,0,0,.15);color:#E2C38A;font-size:20px;line-height:1;cursor:pointer" style-hover="background:rgba(201,161,90,.2)">←</button>
+<button type="button" data-dir="1" onClick="{{ slide }}" aria-label="Next" style="width:48px;height:48px;border-radius:50%;border:1px solid rgba(201,161,90,.75);background:rgba(0,0,0,.15);color:#E2C38A;font-size:20px;line-height:1;cursor:pointer" style-hover="background:rgba(201,161,90,.2)">→</button>
+</div>
+</div>
+</div>
+</sc-for>
+</section>
+
+<section id="handwork" data-screen-label="The Handwork" style="background:#2A0A14;color:#F2E5D2;position:relative;overflow:hidden">
+<svg aria-hidden="true" style="display:block;width:100%;height:18px;background:#0A2120"><rect width="100%" height="18" fill="url(#zari)"></rect></svg>
+<div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">
+<div style="position:relative;aspect-ratio:4/5;overflow:hidden">
+<img src="uploads/WhatsApp%20Image%202026-11-02%20at%2011.53.14.jpeg" alt="Zardozi handwork on gold tissue suit" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 40%"></img>
+<div style="position:absolute;inset:12px;border:1px solid rgba(226,195,138,.5);pointer-events:none"></div>
+</div>
+<div data-reveal="1" style="padding:52px 22px 64px">
+<div style="font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#E2C38A">The Handwork</div>
+<h2 style="margin:14px 0 16px;font-family:Marcellus,serif;font-weight:400;font-size:clamp(34px,8.5vw,54px);line-height:1.08;color:#F5EADB">Every thread, <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#E2C38A">placed by hand.</span></h2>
+<p style="margin:0 0 28px;font-size:16px;line-height:1.65;max-width:440px;color:#E6D9C4">Each piece is finished stitch by stitch, stone by stone. It takes longer. You'll feel the difference the moment you put it on.</p>
+<div style="display:flex;flex-direction:column;border-top:1px solid rgba(201,161,90,.4)">
+<div style="display:grid;grid-template-columns:68px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(201,161,90,.4);align-items:center">
+<div style="width:68px;height:68px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px #C9A15A,0 0 0 4px #2A0A14,0 0 0 5px rgba(201,161,90,.5)"><img src="uploads/1791479909425.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:52% 62%;transform:scale(2.4)"></img></div>
+<div><div style="font-family:Marcellus,serif;font-size:22px;color:#F5EADB">Zardozi</div><div style="font-size:14.5px;line-height:1.5;margin-top:4px;color:#E6D9C4">Metallic zari thread worked into raised motifs that catch every light.</div></div>
+</div>
+<div style="display:grid;grid-template-columns:68px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(201,161,90,.4);align-items:center">
+<div style="width:68px;height:68px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px #C9A15A,0 0 0 4px #2A0A14,0 0 0 5px rgba(201,161,90,.5)"><img src="uploads/1792765768705.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:48% 60%;transform:scale(2.6)"></img></div>
+<div><div style="font-family:Marcellus,serif;font-size:22px;color:#F5EADB">Dabka</div><div style="font-size:14.5px;line-height:1.5;margin-top:4px;color:#E6D9C4">Fine coiled wire, hand-couched for a rich, sculpted shine.</div></div>
+</div>
+<div style="display:grid;grid-template-columns:68px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(201,161,90,.4);align-items:center">
+<div style="width:68px;height:68px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px #C9A15A,0 0 0 4px #2A0A14,0 0 0 5px rgba(201,161,90,.5)"><img src="uploads/1792258542192.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:45% 70%;transform:scale(2.4)"></img></div>
+<div><div style="font-family:Marcellus,serif;font-size:22px;color:#F5EADB">Nakshi</div><div style="font-size:14.5px;line-height:1.5;margin-top:4px;color:#E6D9C4">Delicate textured thread work — the heirloom finish our moms grew up with.</div></div>
+</div>
+<div style="display:grid;grid-template-columns:68px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(201,161,90,.4);align-items:center">
+<div style="width:68px;height:68px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px #C9A15A,0 0 0 4px #2A0A14,0 0 0 5px rgba(201,161,90,.5)"><img src="uploads/1791079995254.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 62%;transform:scale(2.4)"></img></div>
+<div><div style="font-family:Marcellus,serif;font-size:22px;color:#F5EADB">Studs &amp; stonework</div><div style="font-size:14.5px;line-height:1.5;margin-top:4px;color:#E6D9C4">Sitara, cutdana, stones, zari, studs and diamonds — set one by one.</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="how" data-screen-label="How It Works" style="position:relative;overflow:hidden;padding:76px 22px;background:#E9D8C0">
+<sc-if value="{{ showPeacocks }}" hint-placeholder-val="{{ true }}"><img src="assets/peacock-cutout.png" alt="" aria-hidden="true" style="position:absolute;right:-70px;bottom:-30px;width:250px;opacity:.2;pointer-events:none"></img></sc-if>
+<div style="position:relative;max-width:1120px;margin:0 auto">
+<div data-reveal="1" style="text-align:center;margin-bottom:40px">
+<div style="font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#7A5520">How It Works</div>
+<h2 style="margin:14px 0 0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(34px,8.5vw,54px);line-height:1.08">From dream to <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#7A1F35">doli</span></h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0 28px">
+<div data-reveal="1" style="display:grid;grid-template-columns:56px 1fr;gap:14px;padding:22px 0;border-top:1px solid rgba(122,85,32,.4)">
+<div style="font-family:Marcellus,serif;font-size:40px;line-height:.95;color:#8A6526">01</div>
+<div><div style="font-family:Marcellus,serif;font-size:21px">Share your dream look</div><div style="font-size:15px;line-height:1.55;margin-top:6px;color:#3E2A2E">Send a screenshot, a sketch or just a feeling. Mehndi, sangeet or the big day.</div></div>
+</div>
+<div data-reveal="1" style="display:grid;grid-template-columns:56px 1fr;gap:14px;padding:22px 0;border-top:1px solid rgba(122,85,32,.4)">
+<div style="font-family:Marcellus,serif;font-size:40px;line-height:.95;color:#8A6526">02</div>
+<div><div style="font-family:Marcellus,serif;font-size:21px">Consultation &amp; measurements</div><div style="font-size:15px;line-height:1.55;margin-top:6px;color:#3E2A2E">We talk colour, fabric, fit and budget — in the studio or on a video call.</div></div>
+</div>
+<div data-reveal="1" style="display:grid;grid-template-columns:56px 1fr;gap:14px;padding:22px 0;border-top:1px solid rgba(122,85,32,.4)">
+<div style="font-family:Marcellus,serif;font-size:40px;line-height:.95;color:#8A6526">03</div>
+<div><div style="font-family:Marcellus,serif;font-size:21px">We design &amp; handcraft</div><div style="font-size:15px;line-height:1.55;margin-top:6px;color:#3E2A2E">Cut to your measurements and hand-embroidered, one detail at a time.</div></div>
+</div>
+<div data-reveal="1" style="display:grid;grid-template-columns:56px 1fr;gap:14px;padding:22px 0;border-top:1px solid rgba(122,85,32,.4)">
+<div style="font-family:Marcellus,serif;font-size:40px;line-height:.95;color:#8A6526">04</div>
+<div><div style="font-family:Marcellus,serif;font-size:21px">Try on &amp; take it home</div><div style="font-size:15px;line-height:1.55;margin-top:6px;color:#3E2A2E">Final fitting, last touches, and you're ready to shine. We ship to Canada, the US and the UK.</div></div>
+</div>
+</div>
+<div style="display:flex;justify-content:center;margin-top:32px">
+<a href="{{ waGeneral }}" target="_blank" style="display:flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;background:#2A0A14;color:#F5EADB;border-radius:999px;text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase" style-hover="background:#5E1026;color:#F5EADB">Start with step 1</a>
+</div>
+</div>
+</section>
+
+<section id="love" data-screen-label="Client Love" style="padding:64px 0 70px;background:#0D2B29;color:#F2E5D2">
+<svg aria-hidden="true" style="display:block;width:100%;height:18px;margin-top:-64px;margin-bottom:46px;background:#0D2B29"><rect width="100%" height="18" fill="url(#zari)"></rect></svg>
+<div data-reveal="1" style="text-align:center;padding:0 22px">
+<div style="font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#E2C38A">Client Love</div>
+<h2 style="margin:14px 0 0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(34px,8.5vw,54px);line-height:1.08;color:#F5EADB">Our <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#E2C38A">ladlees</span></h2>
+</div>
+<div data-swiper="1" style="position:relative;max-width:1164px;margin:0 auto"><div data-swipe="1" style="touch-action:pan-x pan-y;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:30px 22px 8px;max-width:1164px;margin:0 auto">
+<sc-for list="{{ stories }}" as="s" hint-placeholder-count="4">
+<div style="flex:none;width:min(70vw,270px);aspect-ratio:9/16;scroll-snap-align:center;position:relative;border-radius:18px;overflow:hidden;background:#13403C;box-shadow:0 0 0 1px rgba(201,161,90,.5),0 18px 40px -20px rgba(0,0,0,.7)">
+<img src="{{ s.img }}" alt="{{ s.name }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ s.pos }}"></img>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,transparent 18%,transparent 48%,rgba(10,33,32,.94) 100%)"></div>
+<div style="position:absolute;top:10px;left:10px;right:10px;display:flex;gap:4px">
+<sc-for list="{{ s.bars }}" as="b" hint-placeholder-count="5"><span style="flex:1;height:2px;border-radius:2px;background:rgba(255,255,255,.35);overflow:hidden"><span style="display:block;height:100%;width:{{ b.w }};background:#fff"></span></span></sc-for>
+</div>
+<div style="position:absolute;top:22px;left:12px;display:flex;align-items:center;gap:8px;color:#fff">
+<span style="width:30px;height:30px;border-radius:50%;padding:2px;background:linear-gradient(135deg,#E2C38A,#7A1F35)"><img src="{{ s.img }}" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover;border:2px solid #0D2B29"></img></span>
+<span style="font-size:13px;font-weight:500">{{ s.name }}</span><span style="font-size:12px;opacity:.85">{{ s.event }}</span>
+</div>
+<div style="position:absolute;left:16px;right:16px;bottom:18px;color:#F5EADB">
+<div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:21px;line-height:1.25;text-wrap:pretty">“{{ s.quote }}”</div>
+<div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#E2C38A;margin-top:10px">{{ s.where }}</div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="display:flex;justify-content:center;gap:12px;margin-top:16px">
+<button type="button" data-dir="-1" onClick="{{ slide }}" aria-label="Previous" style="width:48px;height:48px;border-radius:50%;border:1px solid rgba(201,161,90,.75);background:rgba(0,0,0,.15);color:#E2C38A;font-size:20px;line-height:1;cursor:pointer" style-hover="background:rgba(201,161,90,.2)">←</button>
+<button type="button" data-dir="1" onClick="{{ slide }}" aria-label="Next" style="width:48px;height:48px;border-radius:50%;border:1px solid rgba(201,161,90,.75);background:rgba(0,0,0,.15);color:#E2C38A;font-size:20px;line-height:1;cursor:pointer" style-hover="background:rgba(201,161,90,.2)">→</button>
+</div>
+</div>
+</section>
+
+<section id="designer" data-screen-label="Meet the Designer" style="position:relative;overflow:hidden;padding:76px 22px;background:#E9D8C0">
+<sc-if value="{{ showPeacocks }}" hint-placeholder-val="{{ true }}"><img src="assets/peacock-cutout.png" alt="" aria-hidden="true" style="position:absolute;left:-80px;top:10px;width:230px;opacity:.16;pointer-events:none;transform:scaleX(-1)"></img></sc-if>
+<div style="position:relative;max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:36px;align-items:center">
+<div data-reveal="1" style="position:relative;padding:12px">
+<div style="position:absolute;inset:0;border:1px solid #8A6526;border-radius:220px 220px 6px 6px"></div>
+<div style="aspect-ratio:4/5;overflow:hidden;border-radius:210px 210px 4px 4px">
+<img src="uploads/file_000000004b0c71fba8ef7d5864730c49.png" alt="Shruti Chopra, designer" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 20%"></img>
+</div>
+</div>
+<div data-reveal="1">
+<div style="font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#7A5520">Meet the Designer</div>
+<h2 style="margin:14px 0 20px;font-family:Marcellus,serif;font-weight:400;font-size:clamp(36px,9vw,56px);line-height:1.04">Shruti <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#7A1F35">Chopra</span></h2>
+<p style="margin:0 0 16px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:23px;line-height:1.4;text-wrap:pretty;color:#2A0A14">“I always saw my mom with her female tailor, designing our outfits and trying to do the embroidery herself.”</p>
+<p style="margin:0 0 14px;font-size:16px;line-height:1.7;color:#3E2A2E;text-wrap:pretty">She has tremendous knowledge of hand embroidery — dabka, nakshi, sippy, cutdana, stones, zardozi. She always tried to put different styles in our looks, for me and my sister.</p>
+<p style="margin:0 0 26px;font-size:16px;line-height:1.7;color:#3E2A2E;text-wrap:pretty">Ladlee Designer Era carries that same love into every piece, so every woman feels like a queen on her big day.</p>
+<a href="{{ waGeneral }}" target="_blank" style="display:inline-flex;align-items:center;gap:10px;min-height:48px;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#5E1026;text-decoration:none;border-bottom:1px solid #8A6526">Say hi to Shruti →</a>
+</div>
+</div>
+</section>
+
+<section id="reels" data-screen-label="Reels" style="padding:0 0 72px;background:#2A0A14;color:#F2E5D2">
+<svg aria-hidden="true" style="display:block;width:100%;height:18px;margin-bottom:54px"><rect width="100%" height="18" fill="url(#zari)"></rect></svg>
+<div data-reveal="1" style="text-align:center;padding:0 22px">
+<h2 style="margin:14px 0 0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(34px,8.5vw,54px);line-height:1.08;color:#F5EADB">On the <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#E2C38A">Reels</span></h2>
+</div>
+<div data-swiper="1" style="position:relative;max-width:1164px;margin:0 auto"><div data-swipe="1" style="touch-action:pan-x pan-y;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:30px 22px 8px;max-width:1164px;margin:0 auto">
+<sc-for list="{{ igReels }}" as="ig" hint-placeholder-count="4">
+<div style="flex:none;width:min(80vw,330px);height:600px;scroll-snap-align:center;border-radius:14px;overflow:hidden;background:#F5EADB;box-shadow:0 0 0 1px rgba(201,161,90,.6)">
+<iframe src="{{ ig.src }}" title="Instagram reel" loading="lazy" scrolling="no" allowFullScreen="{{ true }}" style="width:100%;height:100%;border:0;display:block"></iframe>
+</div>
+</sc-for>
+<sc-for list="{{ reels }}" as="r" hint-placeholder-count="6">
+<div onClick="{{ r.toggle }}" role="button" aria-label="Play video" style="position:relative;flex:none;display:block;width:min(80vw,330px);height:600px;scroll-snap-align:center;overflow:hidden;border-radius:14px;background:#3A1420;box-shadow:0 0 0 1px rgba(201,161,90,.6);cursor:pointer">
+<video data-autoplay="{{ r.auto }}" src="{{ r.src }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"></video>
+<span data-playicon="1" style="position:absolute;left:50%;top:50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:rgba(30,6,14,.55);border:1px solid rgba(226,195,138,.8);display:{{ r.iconDisplay }};align-items:center;justify-content:center;pointer-events:none"><svg viewBox="0 0 24 24" style="width:26px;height:26px;margin-left:3px"><path d="M7 4l13 8-13 8z" fill="#F5EADB"></path></svg></span>
+</div>
+</sc-for>
+</div>
+<div style="display:flex;justify-content:center;gap:12px;margin-top:16px">
+<button type="button" data-dir="-1" onClick="{{ slide }}" aria-label="Previous" style="width:48px;height:48px;border-radius:50%;border:1px solid rgba(201,161,90,.75);background:rgba(0,0,0,.15);color:#E2C38A;font-size:20px;line-height:1;cursor:pointer" style-hover="background:rgba(201,161,90,.2)">←</button>
+<button type="button" data-dir="1" onClick="{{ slide }}" aria-label="Next" style="width:48px;height:48px;border-radius:50%;border:1px solid rgba(201,161,90,.75);background:rgba(0,0,0,.15);color:#E2C38A;font-size:20px;line-height:1;cursor:pointer" style-hover="background:rgba(201,161,90,.2)">→</button>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px;padding:0 22px">
+<a href="https://www.instagram.com/ladleedesignerera_shruti/" target="_blank" style="display:flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;background:#C9A15A;color:#241317;border-radius:999px;text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase" style-hover="background:#E2C38A;color:#241317">Follow @ladleedesignerera_shruti</a>
+<a href="https://www.tiktok.com/@ladleedesignerera" target="_blank" style="display:flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border:1px solid rgba(242,229,210,.65);color:#F5EADB;border-radius:999px;text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase" style-hover="background:rgba(245,234,219,.1);color:#F5EADB">TikTok @ladleedesignerera</a>
+</div>
+</section>
+
+<section id="enquire" data-screen-label="Enquiry form" style="position:relative;overflow:hidden;padding:76px 22px;background:#E9D8C0">
+<sc-if value="{{ showPeacocks }}" hint-placeholder-val="{{ true }}"><img src="assets/peacock-cutout.png" alt="" aria-hidden="true" style="position:absolute;right:-90px;top:20px;width:230px;opacity:.15;pointer-events:none"></img></sc-if>
+<div style="position:relative;max-width:560px;margin:0 auto">
+<div data-reveal="1" style="text-align:center;margin-bottom:32px">
+<div style="font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#7A5520">Book a Consultation</div>
+<h2 style="margin:14px 0 12px;font-family:Marcellus,serif;font-weight:400;font-size:clamp(34px,8.5vw,52px);line-height:1.08">Tell us about <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#7A1F35">your day</span></h2>
+<p style="margin:0;font-size:15.5px;line-height:1.6;color:#3E2A2E">Shruti replies personally, usually the same day.</p>
+</div>
+<sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-direction:column;gap:22px;background:#F2E5D2;padding:28px 20px;border:1px solid rgba(122,85,32,.4);border-radius:4px;box-shadow:0 0 0 6px #E9D8C0,0 0 0 7px rgba(122,85,32,.3)">
+<label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#7A5520">Name</span><input value="{{ f.name }}" onChange="{{ setName }}" placeholder="Your name" style="min-height:48px;border:0;border-bottom:1px solid #8A6526;background:transparent;font-size:17px;color:#241317;outline:none;padding:0"></input></label>
+<label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#7A5520">Phone</span><input type="tel" value="{{ f.phone }}" onChange="{{ setPhone }}" placeholder="(000) 000-0000" style="min-height:48px;border:0;border-bottom:1px solid #8A6526;background:transparent;font-size:17px;color:#241317;outline:none;padding:0"></input></label>
+<label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#7A5520">Event date</span><input type="date" value="{{ f.date }}" onChange="{{ setDate }}" style="min-height:48px;border:0;border-bottom:1px solid #8A6526;background:transparent;font-size:17px;color:#241317;outline:none;padding:0"></input></label>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#7A5520">I'm looking for</span>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+<sc-for list="{{ types }}" as="t" hint-placeholder-count="4"><button type="button" onClick="{{ t.pick }}" style="min-height:48px;border-radius:999px;border:1px solid #8A6526;background:{{ t.bg }};color:{{ t.color }};font-size:14.5px;cursor:pointer">{{ t.label }}</button></sc-for>
+</div></div>
+<label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#7A5520">Budget range (CAD)</span>
+<select value="{{ f.budget }}" onChange="{{ setBudget }}" style="min-height:48px;border:0;border-bottom:1px solid #8A6526;background:transparent;font-size:17px;color:#241317;outline:none;padding:0">
+<option value="">Select a range</option><option>Under $300</option><option>$300 – $600</option><option>$600 – $1,000</option><option>$1,000 – $2,000</option><option>$2,000+</option><option>Not sure yet</option>
+</select></label>
+<label style="display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 16px;border:1px dashed #8A6526;border-radius:4px;cursor:pointer">
+<svg viewBox="0 0 24 24" style="width:24px;height:24px;flex:none"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="#7A5520" style="stroke-width:1.4"></rect><circle cx="9" cy="10" r="1.8" fill="#7A5520"></circle><path d="M4 17l5-5 4 4 3-3 4 4" fill="none" stroke="#7A5520" style="stroke-width:1.4"></path></svg>
+<span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:15.5px">{{ fileLabel }}</span><span style="font-size:12.5px;color:#7A5520">Screenshot, sketch or inspo pic</span></span>
+<input type="file" accept="image/*" onChange="{{ setFile }}" style="display:none"></input>
+</label>
+<label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#7A5520">Notes</span><textarea value="{{ f.notes }}" onChange="{{ setNotes }}" rows="3" placeholder="Colours, functions, anything you're dreaming of" style="border:0;border-bottom:1px solid #8A6526;background:transparent;font-size:16px;color:#241317;outline:none;padding:8px 0;resize:vertical"></textarea></label>
+<button type="button" onClick="{{ submit }}" style="min-height:60px;border:0;border-radius:999px;background:#C9A15A;color:#241317;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;box-shadow:0 10px 24px -12px rgba(122,85,32,.9)" style-hover="background:#E2C38A">Send my enquiry</button>
+<div style="font-size:13px;line-height:1.5;color:#7A5520;text-align:center">Opens WhatsApp with your details filled in — attach your photo there.</div>
+</div>
+</sc-if>
+<sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+<div style="text-align:center;background:#F2E5D2;padding:40px 22px;border:1px solid rgba(122,85,32,.4)">
+<div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:34px;color:#5E1026">Shukriya, {{ firstName }}!</div>
+<p style="font-size:15.5px;line-height:1.6;color:#3E2A2E;margin:12px 0 20px">Your enquiry is ready in WhatsApp. Hit send, and Shruti will take it from there.</p>
+<button type="button" onClick="{{ reset }}" style="min-height:48px;padding:0 22px;border:1px solid #8A6526;border-radius:999px;background:transparent;font-size:12px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;color:#241317">Edit enquiry</button>
+</div>
+</sc-if>
+</div>
+</section>
+
+<section data-screen-label="Final CTA" style="position:relative;overflow:hidden;background:#1E060E;color:#F5EADB;padding:84px 22px 96px;text-align:center">
+<video data-autoplay="1" src="uploads/WhatsApp%20Video%202026-11-02%20at%2011.54.11.mp4" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" preload="metadata" style="position:absolute;inset:-20px;width:calc(100% + 40px);height:calc(100% + 40px);object-fit:cover;opacity:.75;filter:blur(2.5px)"></video>
+<div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(30,6,14,.35),rgba(30,6,14,.8))"></div>
+<div style="position:absolute;inset:12px;border:1px solid rgba(226,195,138,.55);pointer-events:none"></div>
+<div data-reveal="1" style="position:relative;max-width:640px;margin:0 auto">
+<div style="width:min(46vw,200px);margin:0 auto">{{ peacockB }}</div>
+<h2 style="margin:6px 0 30px;font-family:Marcellus,serif;font-weight:400;font-size:clamp(36px,9.5vw,64px);line-height:1.08;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.6)">Your wedding outfit, <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#E2C38A">exactly how you imagined it.</span></h2>
+<div style="display:flex;flex-direction:column;gap:12px;max-width:360px;margin:0 auto">
+<a href="{{ waGeneral }}" target="_blank" style="display:flex;align-items:center;justify-content:center;min-height:58px;background:#C9A15A;color:#241317;border-radius:999px;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase" style-hover="background:#E2C38A;color:#241317">WhatsApp</a>
+<a href="tel:+13652284610" style="display:flex;align-items:center;justify-content:center;min-height:58px;border:1px solid rgba(226,195,138,.9);background:rgba(30,6,14,.45);color:#F5EADB;border-radius:999px;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase" style-hover="background:rgba(30,6,14,.7);color:#F5EADB">Call 365-228-4610</a>
+<a href="https://ig.me/m/ladleedesignerera_shruti" target="_blank" style="display:flex;align-items:center;justify-content:center;min-height:58px;border:1px solid rgba(226,195,138,.9);background:rgba(30,6,14,.45);color:#F5EADB;border-radius:999px;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase" style-hover="background:rgba(30,6,14,.7);color:#F5EADB">Instagram DM</a>
+</div>
+</div>
+</section>
+
+<section id="faq" data-screen-label="FAQ" style="position:relative;overflow:hidden;padding:76px 22px;background:#E9D8C0">
+<sc-if value="{{ showPeacocks }}" hint-placeholder-val="{{ true }}"><img src="assets/peacock-cutout.png" alt="" aria-hidden="true" style="position:absolute;left:-90px;bottom:-40px;width:240px;opacity:.15;pointer-events:none;transform:scaleX(-1)"></img></sc-if>
+<div style="position:relative;max-width:720px;margin:0 auto">
+<div data-reveal="1" style="text-align:center;margin-bottom:30px">
+<div style="font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#7A5520">Good to know</div>
+<h2 style="margin:14px 0 0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(32px,8vw,50px);line-height:1.08">Before your <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.1em;color:#7A1F35">first fitting</span></h2>
+</div>
+<div style="border-top:1px solid rgba(122,85,32,.45)">
+<sc-for list="{{ faqs }}" as="q" hint-placeholder-count="6">
+<div style="border-bottom:1px solid rgba(122,85,32,.45)">
+<button type="button" onClick="{{ q.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:14px 0;border:0;background:none;text-align:left;cursor:pointer;color:#241317">
+<span style="font-family:Marcellus,serif;font-size:19px;line-height:1.35">{{ q.q }}</span>
+<span style="flex:none;width:30px;height:30px;border-radius:50%;border:1px solid #8A6526;display:flex;align-items:center;justify-content:center;font-size:18px;color:#7A5520">{{ q.sign }}</span>
+</button>
+<sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 20px;font-size:15.5px;line-height:1.65;color:#3E2A2E;padding-right:40px">{{ q.a }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<footer data-screen-label="Footer" style="background:#1E060E;color:#E9DCCB;padding:0 22px 110px">
+<svg aria-hidden="true" style="display:block;width:calc(100% + 44px);margin:0 -22px 52px;height:18px"><rect width="100%" height="18" fill="url(#zari)"></rect></svg>
+<div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:30px">
+<div>
+<div style="font-family:Marcellus,serif;font-size:32px;letter-spacing:.1em;text-transform:uppercase;color:#F5EADB">Ladlee</div>
+<div style="font-size:11px;letter-spacing:.36em;text-transform:uppercase;color:#E2C38A;margin-top:5px">Designer Era</div>
+<div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:21px;margin-top:16px">Live Your Dream Outfit.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;font-size:15.5px">
+<a href="tel:+13652284610" style="color:#E9DCCB;text-decoration:none;min-height:32px;display:flex;align-items:center" style-hover="color:#E2C38A">365-228-4610</a>
+<a href="https://www.instagram.com/ladleedesignerera_shruti/" target="_blank" style="color:#E9DCCB;text-decoration:none;min-height:32px;display:flex;align-items:center" style-hover="color:#E2C38A">Instagram @ladleedesignerera_shruti</a>
+<a href="https://www.tiktok.com/@ladleedesignerera" target="_blank" style="color:#E9DCCB;text-decoration:none;min-height:32px;display:flex;align-items:center" style-hover="color:#E2C38A">TikTok @ladleedesignerera</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;font-size:15.5px">
+<span>[City, Province]</span>
+<span style="color:#E2C38A;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:20px">By appointment only</span>
+<span style="font-size:12.5px;color:#B8A08E;margin-top:12px">© 2026 Ladlee Designer Era</span>
+</div>
+</div>
+</footer>
+
+<a href="{{ waGeneral }}" target="_blank" aria-label="WhatsApp Shruti" style="position:fixed;right:16px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:#C9A15A;color:#241317;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(30,6,14,.7),0 0 0 4px rgba(30,6,14,.55),0 0 0 5px rgba(226,195,138,.7)" style-hover="background:#E2C38A;color:#241317">
+<svg viewBox="0 0 24 24" style="width:28px;height:28px"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" style="stroke-width:1.6"></path><path d="M8.6 7.6c.3-.5 1-.6 1.3-.1l.9 1.6c.2.4 0 .8-.3 1.1l-.4.4c.6 1.3 1.6 2.3 2.9 2.9l.4-.4c.3-.3.7-.5 1.1-.3l1.6.9c.5.3.4 1-.1 1.3-.9.6-2 .8-3 .3a9 9 0 0 1-4.7-4.7c-.5-1-.3-2.1.3-3z" fill="currentColor"></path></svg>
+</a>
+
+<sc-if value="{{ galleryOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed;inset:0;z-index:100;background:#0A2120;color:#F5EADB;display:flex;flex-direction:column">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid rgba(201,161,90,.35)">
+<div><div style="font-family:Marcellus,serif;font-size:23px">{{ col.name }}</div><div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#E2C38A;margin-top:3px">{{ galleryCounter }}</div></div>
+<button type="button" onClick="{{ closeGallery }}" aria-label="Close" style="width:46px;height:46px;border-radius:50%;border:1px solid rgba(226,195,138,.6);background:none;color:#F5EADB;font-size:22px;cursor:pointer">×</button>
+</div>
+<div onScroll="{{ onGalleryScroll }}" style="flex:1;min-height:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none">
+<sc-for list="{{ col.images }}" as="im" hint-placeholder-count="3">
+<div style="flex:none;width:100%;height:100%;scroll-snap-align:center;display:flex;align-items:center;justify-content:center;padding:12px">
+<img src="{{ im }}" alt="{{ col.name }}" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:4px"></img>
+</div>
+</sc-for>
+</div>
+<div style="padding:12px 16px 22px;border-top:1px solid rgba(201,161,90,.35)">
+<div style="font-size:14.5px;line-height:1.5;text-align:center;margin-bottom:12px;color:#E6D9C4">{{ col.note }}</div>
+<a href="{{ col.wa }}" target="_blank" style="display:flex;align-items:center;justify-content:center;min-height:58px;background:#C9A15A;color:#241317;border-radius:999px;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;max-width:480px;margin:0 auto" style-hover="background:#E2C38A;color:#241317">Get this made for me</a>
+</div>
+</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroPhoto&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Moonlit gold tissue&quot;,&quot;Ivory &amp; maroon bridal&quot;,&quot;Red velvet anarkali&quot;,&quot;Gold tissue handwork&quot;],&quot;default&quot;:&quot;Moonlit gold tissue&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;backgroundPeacocks&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showGurmukhi&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const U = n => 'uploads/' + encodeURI(n);
+const WA = t => 'https://wa.me/13652284610?text=' + encodeURIComponent(t);
+const h = React.createElement;
+const HERO = {
+  'Moonlit gold tissue': ['file_0000000050a4722f9d9a5f0e5915e650.png', '40% 30%'],
+  'Ivory & maroon bridal': ['1791742116799.jpg', 'center 15%'],
+  'Red velvet anarkali': ['1791052414401.jpg', 'center 18%'],
+  'Gold tissue handwork': ['WhatsApp Image 2026-11-02 at 11.53.14.jpeg', 'center 30%']
+};
+const C = (name, note, imgs, pos) => ({ name, note, imgs, pos: pos || 'center 18%' });
+const GROUPS = [
+  { title: 'For every function', items: [
+    C('Bridal Suits', 'Your big-day suit, embroidered to the last detail.', ['1791479909425.jpg','1791742116799.jpg','1780272721592.png','file_000000007408722f84f48c69c5e6b136.png','1792258401699.jpg']),
+    C('Jaago Outfit', 'Bright, joyful and made for dancing all night.', ['1791341063680.jpg','1792258470781.jpg','1780272598232.png']),
+    C('Mehndi Outfit', 'Fresh colours and light flowing layers for your mehndi.', ['file_000000009f7071fdb4cf542ba8929b46.png','1792258542192.jpg','1791341063680.jpg']),
+    C('Sangeet Outfit', 'Twirl-ready looks with all the sparkle.', ['1791079995254.jpg','1791073858513.jpg','file_000000005f18722fb02ae69a301cdc2a.png']),
+    C('Engagement Look', 'Soft, elegant and photo-perfect.', ['1792540905688.png','1780272218546.png','1780272268321.png','1779424072424.png']),
+    C('Reception Outfit', 'Evening glamour with rich handwork.', ['1792028351309.jpg','file_0000000011d871fbbf79478eb992d890.png','file_000000007a7471f5a5b09ff09f3d1f68.png','file_000000004b3471f5aaea50f9f350f25b.png'], 'center 8%')
+  ]},
+  { title: 'Signature silhouettes', items: [
+    C('Anarkali', 'Full, flowing and endlessly graceful.', ['1792540949356.png','file_000000009f7071fdb4cf542ba8929b46.png']),
+    C('Bridal Anarkali', 'A grand flare with heirloom borders.', ['1791052557862.jpg','1791052414401.jpg']),
+    C('Velvet Anarkali', 'Pure velvet panels with zardozi detail.', ['1792541245094.jpg','1792541109927.jpg','1792765677564.jpg']),
+    C('Red Anarkali', 'The classic red, made only for you.', ['1791052414401.jpg','file_0000000011d871fbbf79478eb992d890.png']),
+    C('Sharara Suit', 'Statement sharara with a hand-worked kurti.', ['1792258401699.jpg','file_0000000031fc720c8ed673b53220225d.png']),
+    C('Garara Suit', 'Traditional garara, rich with embroidery.', ['1780272721592.png']),
+    C('Farshi Salwar', 'Floor-skimming salwar for a regal walk.', ['1780272598232.png','1780272268321.png']),
+    C('Lehnga Choli', 'Hand-embellished choli with a full lehnga.', ['1791079995254.jpg','file_000000005f18722fb02ae69a301cdc2a.png'])
+  ]},
+  { title: 'Velvet, tissue & star looks', items: [
+    C('Velvet Suits', 'Pure makhmali velvet, worked in gold.', ['1793554151365.jpg','1791052383996.jpg','1792540899349.jpg','1793553740607.jpg','1780272450154.png','1792765768705.jpg']),
+    C('Tissue & Gold', 'Shimmering tissue with heavy zardozi.', ['WhatsApp Image 2026-11-02 at 11.53.14.jpeg','WhatsApp Image 2026-11-02 at 11.53.27.jpeg','file_0000000050a4722f9d9a5f0e5915e650.png']),
+    C('Celebrity-Inspired', 'Seen a look you love? We can create it.', ['1779505553364.png','1791330032172.png','file_0000000031fc720c8ed673b53220225d.png','1791329915079.png'])
+  ]}
+];
+const STORIES = [
+  ['1792540899349.jpg','Simran','Bride','Every guest asked who made my suit. It was exactly my dream.','Velvet suit','center 20%'],
+  ['1780272450154.png','Harleen','Jaago','The velvet and the handwork in person are even better than the pictures.','Velvet patiala','center 20%'],
+  ['1792540905688.png','Navdeep','Engagement','Shruti understood my idea from one screenshot.','Engagement look','center 30%'],
+  ['1791341063680.jpg','Jasmine','Mehndi','The fit was perfect and the colours were so happy.','Mehndi outfit','center 15%'],
+  ['1792258470781.jpg','Priya','Wedding guest','My mom cried when she saw me. Worth every stitch.','Wedding suit','center 15%']
+];
+const IG = ['reel/DdWwgXZPcSn','reel/DcWU9uOSVp8','p/DaSa5w7jlgL'];
+const REELS = ['WhatsApp Video 2026-11-02 at 11.54.29 (4).mp4','WhatsApp Video 2026-11-02 at 11.54.29 (3).mp4','WhatsApp Video 2026-11-02 at 11.54.29 (2).mp4','WhatsApp Video 2026-11-02 at 11.54.29 (1).mp4','WhatsApp Video 2026-11-02 at 11.54.29.mp4','WhatsApp Video 2026-11-02 at 11.54.13.mp4'];
+const FAQS = [
+  ['How long does a custom suit take?', 'Most pieces take 4–8 weeks, and bridal handwork can take longer. Message us as early as you can so we can plan your fittings around your functions.'],
+  ['Can you make it in my size?', 'Every piece is made to your measurements — no standard sizes. We take them at your consultation, or guide you through it on a video call.'],
+  ['What does it cost?', 'Pricing depends on fabric and how much handwork you want. Share your budget and Shruti will design around it.'],
+  ['Do I need an appointment?', 'Yes — the studio is by appointment only, so you get Shruti\'s full attention. Book on WhatsApp or through the form above.'],
+  ['Where do you ship?', 'We ship across Canada, the US and the UK, and can do consultations and measurements over video.'],
+  ['My wedding is soon. Can you rush it?', 'Often, yes. Rush orders depend on the design and our calendar — WhatsApp your date and we\'ll tell you honestly what\'s possible.']
+];
+const TYPES = ['Bridal', 'Wedding guest', 'Punjabi suit', 'Custom'];
+
+const PK = 'assets/peacock-cutout.png';
+const GLINTS = [[45.6,36.8],[43.5,42.2],[48.5,42.5],[39.4,50],[18.5,58],[24.8,63.7],[38.1,72],[51.9,68],[66.3,74.5],[41.3,82.8],[68.1,87.6],[62,6],[30,66],[56,25]];
+function buildPeacock(ref, onTap) {
+  const layer = (extra, attrs) => h('img', { src: PK, alt: '', draggable: false, ...(attrs || {}), style: { position: 'absolute', inset: 0, width: '100%', height: '100%', display: 'block', userSelect: 'none', WebkitUserSelect: 'none', ...extra } });
+  return h('div', { ref, 'data-peacock': 1, onClick: onTap, role: 'img', 'aria-label': 'Peacock', style: { position: 'relative', width: '100%', aspectRatio: '4 / 5', cursor: 'pointer', WebkitTapHighlightColor: 'transparent' } },
+    h('div', { 'data-body': 1, style: { position: 'absolute', inset: 0, transformOrigin: '62% 53%' } },
+      layer({ clipPath: 'polygon(0 0,55% 0,55% 14%,67.5% 19.5%,85% 19.5%,85% 0,100% 0,100% 100%,0 100%)' }),
+      layer({ clipPath: 'polygon(0 31%,52% 31%,57% 55%,100% 55%,100% 100%,0 100%)', transformOrigin: '56% 46%' }, { 'data-tail': 1 }),
+      layer({ clipPath: 'polygon(55% 0,85% 0,85% 20.2%,67.5% 20.2%,55% 14.6%)', transformOrigin: '74% 19.5%' }, { 'data-head': 1 }),
+      GLINTS.map((g, i) => h('span', { key: i, 'data-glint': 1, style: { position: 'absolute', left: g[0] + '%', top: g[1] + '%', width: 16, height: 16, marginLeft: -8, marginTop: -8, opacity: 0, background: 'radial-gradient(circle,#FFF8E2 0,#F0D79E 35%,rgba(226,195,138,0) 72%)', clipPath: 'polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%)', pointerEvents: 'none' } }))
+    )
+  );
+}
+
+class Component extends DCLogic {
+  state = { col: null, gi: 0, faq: 0, form: { name: '', phone: '', date: '', type: 'Bridal', budget: '', notes: '' }, fileName: '', sent: false };
+  rootRef = React.createRef();
+  heroRef = React.createRef();
+  pkA = React.createRef();
+  pkB = React.createRef();
+
+  shake(el) {
+    if (!el || !el.animate) return;
+    const t = el.querySelector('[data-tail]'), hd = el.querySelector('[data-head]');
+    t && t.animate([{ transform: 'rotate(0)' }, { transform: 'rotate(1.6deg)' }, { transform: 'rotate(-1.4deg)' }, { transform: 'rotate(1deg)' }, { transform: 'rotate(-.6deg)' }, { transform: 'rotate(0)' }], { duration: 1100, easing: 'ease-in-out' });
+    hd && hd.animate([{ transform: 'rotate(0)' }, { transform: 'rotate(-6deg)' }, { transform: 'rotate(2deg)' }, { transform: 'rotate(0)' }], { duration: 900, easing: 'ease-in-out' });
+    el.querySelectorAll('[data-glint]').forEach((g, i) => g.animate([{ opacity: 0, transform: 'scale(.3)' }, { opacity: 1, transform: 'scale(1.4) rotate(45deg)' }, { opacity: 0, transform: 'scale(.3) rotate(90deg)' }], { duration: 900, delay: i * 45 }));
+  }
+  wake(el) {
+    if (!el || !el.animate || el._alive) return;
+    el._alive = true;
+    el.animate([{ opacity: 0, transform: 'translateY(26px) scale(.96)' }, { opacity: 1, transform: 'none' }], { duration: 1500, easing: 'cubic-bezier(.2,.8,.2,1)' });
+    const b = el.querySelector('[data-body]'), t = el.querySelector('[data-tail]'), hd = el.querySelector('[data-head]');
+    b && b.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.008)' }], { duration: 3200, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
+    t && t.animate([{ transform: 'rotate(-.5deg)', filter: 'saturate(1) brightness(1)' }, { transform: 'rotate(.6deg)', filter: 'saturate(1.12) brightness(1.06)' }], { duration: 3400, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
+    hd && hd.animate([{ transform: 'rotate(0)' }, { transform: 'rotate(-3deg)', offset: .25 }, { transform: 'rotate(-3deg)', offset: .45 }, { transform: 'rotate(1.5deg)', offset: .7 }, { transform: 'rotate(0)' }], { duration: 5600, iterations: Infinity, easing: 'ease-in-out' });
+    el.querySelectorAll('[data-glint]').forEach((g, i) => {
+      const p = ((i * 0.137) % 0.8);
+      g.animate([{ opacity: 0, transform: 'scale(.3)' }, { opacity: 0, transform: 'scale(.3)', offset: p }, { opacity: 1, transform: 'scale(1.2) rotate(45deg)', offset: p + .08 }, { opacity: 0, transform: 'scale(.3) rotate(90deg)', offset: p + .16 }, { opacity: 0, transform: 'scale(.3)' }], { duration: 4200 + (i % 3) * 900, iterations: Infinity });
+    });
+  }
+
+  componentDidMount() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    this.io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; this.io.unobserve(e.target); }
+    }), { threshold: 0.12 });
+    root.querySelectorAll('[data-reveal]').forEach(el => {
+      el.style.opacity = '0'; el.style.transform = 'translateY(22px)';
+      el.style.transition = 'opacity 1s ease, transform 1s ease';
+      this.io.observe(el);
+    });
+    this.vio = new IntersectionObserver(es => es.forEach(e => {
+      const v = e.target; v.muted = true;
+      if (e.isIntersecting) { const p = v.play(); p && p.catch(() => {}); } else v.pause();
+    }), { threshold: 0.2 });
+    root.querySelectorAll('video').forEach(v => { v.muted = true; v.defaultMuted = true; v.volume = 0; v.setAttribute('muted', ''); v.addEventListener('volumechange', () => { if (!v.muted) v.muted = true; }); });
+    root.querySelectorAll('video[data-autoplay="1"]').forEach(v => this.vio.observe(v));
+    root.querySelectorAll('[data-swipe]').forEach(el => {
+      let down = false, sx = 0, sl = 0, moved = false;
+      el.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = el.scrollLeft; el.style.scrollSnapType = 'none'; el.style.cursor = 'grabbing'; });
+      window.addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - sx; if (Math.abs(dx) > 5) moved = true; el.scrollLeft = sl - dx; });
+      window.addEventListener('pointerup', () => { if (!down) return; down = false; el.style.cursor = ''; el.style.scrollSnapType = 'x mandatory'; });
+      el.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+      el.addEventListener('dragstart', e => e.preventDefault());
+      el.style.cursor = 'grab';
+    });
+    this.pio = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { this.wake(e.target); this.pio.unobserve(e.target); }
+    }), { threshold: 0.25 });
+    [this.pkA.current, this.pkB.current].forEach(s => s && this.pio.observe(s));
+    if (this.heroRef.current && this.heroRef.current.animate) {
+      this.heroRef.current.animate([{ transform: 'scale(1.12)' }, { transform: 'scale(1)' }], { duration: 9000, easing: 'ease-out', fill: 'forwards' });
+    }
+  }
+  componentWillUnmount() { [this.io, this.vio, this.pio].forEach(o => o && o.disconnect()); }
+
+  setField(k) { return e => { const v = e.target.value; this.setState(s => ({ form: { ...s.form, [k]: v } })); }; }
+
+  renderVals() {
+    const p = this.props;
+    const { col, gi, faq, form, fileName, sent } = this.state;
+    const hero = HERO[p.heroPhoto] || HERO['Moonlit gold tissue'];
+    const groups = GROUPS.map(g => ({
+      title: g.title,
+      items: g.items.map(c => ({
+        name: c.name, pos: c.pos, cover: U(c.imgs[0]),
+        count: c.imgs.length + (c.imgs.length === 1 ? ' look' : ' looks'),
+        open: () => { this.setState({ col: c, gi: 0 }); document.body.style.overflow = 'hidden'; }
+      }))
+    }));
+    return {
+      rootRef: this.rootRef, heroRef: this.heroRef,
+      heroSrc: U(hero[0]), heroPos: hero[1],
+      showGurmukhi: p.showGurmukhi ?? true,
+      showPeacocks: p.backgroundPeacocks ?? true,
+      peacockA: buildPeacock(this.pkA, () => this.shake(this.pkA.current)),
+      peacockB: buildPeacock(this.pkB, () => this.shake(this.pkB.current)),
+      waGeneral: WA("Hi Shruti! I found Ladlee Designer Era online and I'd love to talk about a custom outfit."),
+      groups,
+      galleryOpen: !!col,
+      col: col ? { name: col.name, note: col.note, images: col.imgs.map(U), wa: WA(`Hi Shruti! I'd love to get something from your ${col.name} collection made for me. Can we talk?`) } : { images: [] },
+      galleryCounter: col ? `${gi + 1} / ${col.imgs.length} · swipe` : '',
+      onGalleryScroll: e => { const t = e.currentTarget; const i = Math.round(t.scrollLeft / t.clientWidth); if (i !== this.state.gi) this.setState({ gi: i }); },
+      closeGallery: () => { this.setState({ col: null }); document.body.style.overflow = ''; },
+      stories: STORIES.map((s, i) => ({ img: U(s[0]), name: s[1], event: s[2], quote: s[3], where: s[4], pos: s[5], bars: STORIES.map((_, j) => ({ w: j <= i ? '100%' : '0%' })) })),
+      igReels: IG.map(x => ({ src: `https://www.instagram.com/${x}/embed` })),
+      reels: REELS.map((r, i) => ({ src: U(r), auto: i === 0 ? '1' : '0', iconDisplay: i === 0 ? 'none' : 'flex', toggle: e => { const v = e.currentTarget.querySelector('video'), ic = e.currentTarget.querySelector('[data-playicon]'); if (!v) return; v.muted = true; if (v.paused) { const p = v.play(); p && p.catch(() => {}); if (ic) ic.style.display = 'none'; } else { v.pause(); if (ic) ic.style.display = 'flex'; } } })),
+      faqs: FAQS.map((f, i) => ({ q: f[0], a: f[1], open: faq === i, sign: faq === i ? '−' : '+', toggle: () => this.setState({ faq: faq === i ? -1 : i }) })),
+      f: form,
+      types: TYPES.map(t => ({ label: t, bg: form.type === t ? '#2A0A14' : 'transparent', color: form.type === t ? '#F5EADB' : '#241317', pick: () => this.setState(s => ({ form: { ...s.form, type: t } })) })),
+      setName: this.setField('name'), setPhone: this.setField('phone'), setDate: this.setField('date'), setBudget: this.setField('budget'), setNotes: this.setField('notes'),
+      setFile: e => { const fl = e.target.files && e.target.files[0]; this.setState({ fileName: fl ? fl.name : '' }); },
+      fileLabel: fileName ? fileName : 'Upload a reference photo',
+      notSent: !sent, sent,
+      firstName: (form.name || 'ji').split(' ')[0],
+      submit: () => {
+        const msg = `Hi Shruti! New enquiry from the website:\nName: ${form.name}\nPhone: ${form.phone}\nEvent date: ${form.date}\nLooking for: ${form.type}\nBudget: ${form.budget}\nNotes: ${form.notes}${fileName ? '\n(I\'ll attach my reference photo here)' : ''}`;
+        window.open(WA(msg), '_blank');
+        this.setState({ sent: true });
+      },
+      reset: () => this.setState({ sent: false }),
+      slide: e => { const w = e.currentTarget.closest('[data-swiper]'); const r = w && w.querySelector('[data-swipe]'); if (!r) return; const card = r.firstElementChild; const step = card ? card.getBoundingClientRect().width + 14 : r.clientWidth * .8; const dir = +e.currentTarget.dataset.dir || 1; r.style.scrollSnapType = 'none'; r.scrollBy({ left: step * dir, behavior: 'smooth' }); clearTimeout(r._snapT); r._snapT = setTimeout(() => { r.style.scrollSnapType = 'x mandatory'; }, 600); }
+    };
+  }
+}
+</script>
+</body>
+</html>
